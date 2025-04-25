@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu",sans-serif;
+  list-style: none;
+}
+body{
+  background-color: rgb(4, 36, 44);
+  color: gainsboro;
+}
+.main{
+  margin: 2rem 3rem ;
+
+  h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.main .input-container{
+  text-align: center;
+  margin:auto 50px;
+  width: 48%;
+  border-radius: 5px;
+  padding: 10px;
+  /* display: inline; */
+  margin: 10px auto;
+  background-color:rgb(3, 17, 20);
+
+  input{
+    padding: 6px 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+}
+button{
+  padding: 7px 2rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-add{
+  background-color: red;
+}
+.btn-edit{
+  background-color: greenyellow;
+}
+.grid{
+  margin:20px 0;
+  display: grid;
+}
+.grid-col-three{
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+.box {
+  background-color: rgba(16, 74, 88, 0.644);
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid rgba(137, 168, 175, 0.644);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 210px;
+  position: relative;
+  overflow: hidden; /* Keeps animation inside the box */
+
+  .id{
+    font-weight: 800;
+    color: rgb(226, 224, 224);
+  }
+  p{
+    line-height: 1.4;
+  }
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -120px;
+  width: 20px; /* Increased width */
+  height: 450px;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.15);
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+}
+
+.box:hover::after {
+  left: 120%;
+}
+
+  
+.button-container{
+  /* padding:7px 0; */
+
+  button{
+    margin-right: 10px;
+  }
+}
+
+button {
+  transition: all 0.5s;
+
+  &:hover{
+    scale: 1.1;
+  }
+}
