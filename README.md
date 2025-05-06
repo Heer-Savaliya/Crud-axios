@@ -36,11 +36,11 @@ Welcome to **React Axios CRUD**, a simple and powerful web app that demonstrates
    git clone https://github.com/your-username/react-axios-crud.git
    cd react-axios-crud
    
-2. **Install dependencies **
+2. **Install dependencies**
     ```bash
     npm install
 
-3. **Run the development server **
+3. **Run the development server**
     ```bash
     npm start
 
